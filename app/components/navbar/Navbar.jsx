@@ -32,10 +32,10 @@ const Navbar = () => {
                   name=''
                   id=''
                   placeholder='Search...'
-                  className='w-full h-10 outline-none pl-4 pr-10 bg-gray-100 text-gray-700 text-sm font-light rounded-full'
+                  className='w-full h-10 outline-none pl-4 pr-10 bg-gray-100 border text-gray-700 text-sm font-light rounded-full'
                 />
-                <button className='absolute right-3 text-gray-500 hover:text-primary'>
-                  <Search strokeWidth={1.5} />
+                <button className='absolute right-3 text-gray-500 duration-300 hover:text-primary'>
+                  <Search strokeWidth={1.5} size={20} />
                 </button>
               </form>
               <div

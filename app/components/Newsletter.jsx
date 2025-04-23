@@ -24,7 +24,7 @@ const Newsletter = () => {
               className='w-full h-10 outline-none pl-4 pr-10 text-gray-700 text-sm font-light rounded-full'
             />
             <button className='absolute right-3 text-gray-700 hover:text-primary'>
-              <Bell strokeWidth={1.5} />
+              <Bell strokeWidth={1.5} size={20} />
             </button>
           </form>
         </div>
