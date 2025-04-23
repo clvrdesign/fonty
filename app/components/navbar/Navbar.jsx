@@ -51,7 +51,7 @@ const Navbar = () => {
             <li>
               <a
                 href='/'
-                className='py-[25px] lg:px-6 px-3 bg-primary/5 text-primary'
+                className='py-[20px] border-b-4 border-primary lg:px-6 px-3 bg-primary/5 text-primary'
               >
                 Home
               </a>
@@ -59,7 +59,7 @@ const Navbar = () => {
             <li>
               <a
                 href='/fonts'
-                className='py-[25px] lg:px-6 px-3 hover:bg-gray-50'
+                className='py-[25px] lg:px-6 px-3 hover:text-primary'
               >
                 Browser Fonts
               </a>
@@ -67,7 +67,7 @@ const Navbar = () => {
             <li>
               <a
                 href='/fonts/themes'
-                className='py-[25px] lg:px-6 px-3 hover:bg-gray-50'
+                className='py-[25px] lg:px-6 px-3 hover:text-primary'
               >
                 Themes
               </a>
@@ -75,7 +75,7 @@ const Navbar = () => {
             <li>
               <a
                 href='/authors'
-                className='py-[25px] lg:px-6 px-3 hover:bg-gray-50'
+                className='py-[25px] lg:px-6 px-3 hover:text-primary'
               >
                 For Designers
               </a>

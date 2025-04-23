@@ -6,85 +6,100 @@ import Container from "../Container";
 
 const Footer = () => {
   return (
-    <footer className='bg-secondary text-white pt-10 mt-10'>
+    <footer className='bg-secondary text-white mt-10 pt-20 pb-8 px-4'>
       <Container>
-        <div className='flex flex-col justify-center items-center py-20'>
-          <div className='flex flex-col items-center justify-center'>
-            <Link href={"/"}>
+        {/* Main Content */}
+        <div className='flex flex-col lg:flex-row justify-between gap-12 pb-16'>
+          {/* Brand Column */}
+          <div className='max-w-md'>
+            <Link href="/" className="inline-block">
               <Image
                 src={logo}
-                alt='Logo'
-                width={150} // Adjust the width as needed
-                height={50} // Adjust the height as needed
-                className='' // Optional: Add margin to the right of the logo
-                priority={true} // Optional: Load the logo image with priority
+                alt='Fonty Logo'
+                width={140}
+                height={20}
+                className='hover:scale-105 transition-transform duration-300'
+                priority
               />
             </Link>
-            <p className='mt-10 max-w-[750px] m-auto text-center text-gray-400'>
-              The marketplace for 100% commercial-use fonts. Empowering
-              designers since 2024. Fonty offers a clean, user-friendly
-              interface, advanced search filters, and font previews to help
-              designers find the perfect typeface.
+            <p className='mt-6 text-gray-300 leading-relaxed'>
+              The premier marketplace for 100% commercial-use fonts. 
+              Empowering designers with cutting-edge typography since 2024. 
+              Discover, license, and create with our curated collection.
             </p>
+            
+            {/* Social Links */}
+            <div className="mt-6 flex gap-4">
+              <a href="#" className="text-gray-400 hover:text-primary transition-colors duration-300">
+                Twitter
+              </a>
+              <a href="#" className="text-gray-400 hover:text-primary transition-colors duration-300">
+                Instagram
+              </a>
+              <a href="#" className="text-gray-400 hover:text-primary transition-colors duration-300">
+                Github
+              </a>
+              <a href="#" className="text-gray-400 hover:text-primary transition-colors duration-300">
+                Facebook
+              </a>
+            </div>
           </div>
 
-          <ul className='flex flex-wrap justify-center gap-6 mt-10'>
-            <li>
-              <a
-                href='#home'
-                className='text-sm text-gray-400 hover:text-primary duration-300'
-              >
-                Featured fonts
-              </a>
-            </li>
-            <li>
-              <a
-                href='#about'
-                className='text-sm text-gray-400 hover:text-primary duration-300'
-              >
-                Designer hub
-              </a>
-            </li>
-            <li>
-              <a
-                href='#products'
-                className='text-sm text-gray-400 hover:text-primary duration-300'
-              >
-                Pricing
-              </a>
-            </li>
-            <li>
-              <a
-                href='#projects'
-                className='text-sm text-gray-400 hover:text-primary duration-300'
-              >
-                Blog
-              </a>
-            </li>
-            <li>
-              <a
-                href='#contact'
-                className='text-sm text-gray-400 hover:text-primary duration-300'
-              >
-                About
-              </a>
-            </li>
-          </ul>
+          {/* Links Grid */}
+          <div className='grid grid-cols-2 md:grid-cols-3 gap-8'>
+            {/* Explore */}
+            <div>
+              <h3 className='text-lg font-semibold mb-4 text-primary'>Explore</h3>
+              <ul className='space-y-3'>
+                <li><Link href="#" className='text-gray-400 hover:text-white transition-colors duration-300'>Featured Fonts</Link></li>
+                <li><Link href="#" className='text-gray-400 hover:text-white transition-colors duration-300'>Trending</Link></li>
+                <li><Link href="#" className='text-gray-400 hover:text-white transition-colors duration-300'>Font Pairings</Link></li>
+                <li><Link href="#" className='text-gray-400 hover:text-white transition-colors duration-300'>Designer Spotlight</Link></li>
+              </ul>
+            </div>
+
+            {/* Resources */}
+            <div>
+              <h3 className='text-lg font-semibold mb-4 text-primary'>Resources</h3>
+              <ul className='space-y-3'>
+                <li><Link href="#" className='text-gray-400 hover:text-white transition-colors duration-300'>Blog</Link></li>
+                <li><Link href="#" className='text-gray-400 hover:text-white transition-colors duration-300'>Tutorials</Link></li>
+                <li><Link href="#" className='text-gray-400 hover:text-white transition-colors duration-300'>License Guide</Link></li>
+                <li><Link href="#" className='text-gray-400 hover:text-white transition-colors duration-300'>Support</Link></li>
+              </ul>
+            </div>
+
+            {/* Legal */}
+            <div>
+              <h3 className='text-lg font-semibold mb-4 text-primary'>Company</h3>
+              <ul className='space-y-3'>
+                <li><Link href="#" className='text-gray-400 hover:text-white transition-colors duration-300'>About Us</Link></li>
+                <li><Link href="#" className='text-gray-400 hover:text-white transition-colors duration-300'>Careers</Link></li>
+                <li><Link href="#" className='text-gray-400 hover:text-white transition-colors duration-300'>Terms</Link></li>
+                <li><Link href="#" className='text-gray-400 hover:text-white transition-colors duration-300'>Privacy</Link></li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div className='text-center mt-8 text-gray-400 border-t border-primary/20 py-6'>
-          <small className='text-gray-400'>
-            &copy; {new Date().getFullYear()} Fonty. All rights reserved.{" "}
-          </small>
-          |
-          <small className='text-gray-400'>
-            {" "}
-            Font Upload{" "}
-            <Link className='text-primary' href={"/"}>
-              {" "}
-              Agreement
+        {/* Divider */}
+        <div className='border-t border-gray-700'></div>
+
+        {/* Bottom Bar */}
+        <div className='pt-8 flex flex-col md:flex-row justify-between items-center gap-4'>
+          <p className='text-gray-400 text-sm'>
+            © {new Date().getFullYear()} Fonty. All rights reserved.
+          </p>
+          
+          <div className="flex gap-4 text-sm">
+            <Link href="#" className='text-gray-400 hover:text-primary transition-colors duration-300'>
+              Font Upload Agreement
             </Link>
-          </small>
+            <span className="text-gray-600">|</span>
+            <Link href="#" className='text-gray-400 hover:text-primary transition-colors duration-300'>
+              Cookie Policy
+            </Link>
+          </div>
         </div>
       </Container>
     </footer>
