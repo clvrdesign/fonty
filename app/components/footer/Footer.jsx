@@ -6,7 +6,7 @@ import Container from "../Container";
 
 const Footer = () => {
   return (
-    <footer className='bg-secondary text-white mt-10 pt-20 pb-8 px-4'>
+    <footer className='bg-secondary text-white pt-20 pb-8 px-4'>
       <Container>
         {/* Main Content */}
         <div className='flex flex-col lg:flex-row justify-between gap-12 pb-16'>

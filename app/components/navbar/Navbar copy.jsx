@@ -1,0 +1,94 @@
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import logo from "@/public/logo-red.svg";
+import Button_secondary from "../Buttons/Button_secondary";
+import Container from "../Container";
+import { Search, Menu } from "lucide-react";
+
+const Navbar = () => {
+  return (
+    <nav className='fixed top-0 w-full flex justify-between items-center px-4 py-3 backdrop-blur-lg bg-white bg-opacity-90 z-50'>
+      <Container>
+        <div className='flex justify-between items-center w-full'>
+          <div className='md:w-fit w-full md:justify-start justify-between items-center flex gap-4 z-20'>
+            <Link href={"/"}>
+              <Image
+                src={logo}
+                alt='Logo'
+                width={100} // Adjust the width as needed
+                height={50} // Adjust the height as needed
+                className='' // Optional: Add margin to the right of the logo
+                priority={true} // Optional: Load the logo image with priority
+              />
+            </Link>
+            <div className='flex items-center gap-3'>
+              <form
+                action=''
+                className='relative lg:max-w-[315px] max-w-[250px] w-full flex items-center'
+              >
+                <input
+                  type='search'
+                  name=''
+                  id=''
+                  placeholder='Search...'
+                  className='w-full h-10 outline-none pl-4 pr-10 bg-gray-100 text-gray-700 text-sm font-light rounded-full'
+                />
+                <button className='absolute right-3 text-gray-500 hover:text-primary'>
+                  <Search strokeWidth={1.5} />
+                </button>
+              </form>
+              <div
+                id='toggleMenu'
+                className='md:hidden block text-gray-500 text-lg cursor-pointer'
+              >
+                <Menu strokeWidth={1.5} />
+              </div>
+            </div>
+          </div>
+          <div className="hidden md:flex items-center">
+          <ul className='w-fit md:flex text-gray-500 text-sm'>
+            <li>
+              <a
+                href='/'
+                className='py-[20px] border-b-4 border-primary lg:px-6 px-3 bg-primary/5 text-primary'
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href='/fonts'
+                className='py-[25px] lg:px-6 px-3 hover:text-primary'
+              >
+                Browser Fonts
+              </a>
+            </li>
+            <li>
+              <a
+                href='/fonts/themes'
+                className='py-[25px] lg:px-6 px-3 hover:text-primary'
+              >
+                Themes
+              </a>
+            </li>
+            <li>
+              <a
+                href='/authors'
+                className='py-[25px] lg:px-6 px-3 hover:text-primary'
+              >
+                For Designers
+              </a>
+            </li>
+          </ul>
+          <Button_secondary>
+            Sign Up
+          </Button_secondary>
+          </div>
+        </div>
+      </Container>
+    </nav>
+  );
+};
+
+export default Navbar;

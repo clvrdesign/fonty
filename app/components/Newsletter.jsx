@@ -4,9 +4,9 @@ import { Bell } from "lucide-react";
 
 const Newsletter = () => {
   return (
-    <section className='mt-10 px-3'>
-      <Container>
-        <div className='bg-primary h-[315px] flex flex-col justify-center rounded-3xl items-center gap-3 px-4'>
+    <section className='mt-10'>
+      
+        <div className='bg-primary h-[315px] flex flex-col justify-center items-center gap-3 px-4'>
           <h1 className='text-4xl font-bold text-white'>Newsletter</h1>
           <p className='sm:max-w-[450px] max-w-[375px] text-center text-white'>
             Subscribe to our Newsletter so you get a notification whenever a new
@@ -28,7 +28,7 @@ const Newsletter = () => {
             </button>
           </form>
         </div>
-      </Container>
+      
     </section>
   );
 };

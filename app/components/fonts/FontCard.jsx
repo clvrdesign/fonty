@@ -16,7 +16,7 @@ const FontCard = () => {
         </div>
       </div>
       <div className='p-4 h-48 bg-primary flex items-center justify-center'>
-        <p className='text-3xl text-white z-10'>Aa Bb Cc</p>
+        <p className='text-[4rem] text-white z-10'>Aa</p>
         <Image
           src={fontImage}
           width={2500}
