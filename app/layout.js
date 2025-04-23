@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={`${interSans.variable} ${epilogueSans.variable}`}>
-        <Navbar />
+        <Navbar/>
         {children}
         <Footer />
       </body>

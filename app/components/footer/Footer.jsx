@@ -46,18 +46,7 @@ const Footer = () => {
           </div>
 
           {/* Links Grid */}
-          <div className='grid grid-cols-2 md:grid-cols-4 gap-20'>
-            {/* Explore */}
-            <div>
-              <h3 className='text-lg font-semibold mb-4 text-primary'>Explore</h3>
-              <ul className='space-y-3 text-sm'>
-                <li><Link href="#" className='text-gray-400 hover:text-white transition-colors duration-300'>Featured Fonts</Link></li>
-                <li><Link href="#" className='text-gray-400 hover:text-white transition-colors duration-300'>Trending</Link></li>
-                <li><Link href="#" className='text-gray-400 hover:text-white transition-colors duration-300'>Font Pairings</Link></li>
-                <li><Link href="#" className='text-gray-400 hover:text-white transition-colors duration-300'>Designer Spotlight</Link></li>
-              </ul>
-            </div>
-
+          <div className='grid grid-cols-2 md:grid-cols-3 gap-20'>
             {/* Explore */}
             <div>
               <h3 className='text-lg font-semibold mb-4 text-primary'>Explore</h3>
