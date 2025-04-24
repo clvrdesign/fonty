@@ -15,7 +15,7 @@ const FontCard = () => {
           <Library strokeWidth={1.5} />
         </div>
       </div>
-      <div className='p-4 h-48 bg-primary flex items-center justify-center'>
+      <div className='p-4 h-60 bg-primary flex items-center justify-center'>
         <p className='text-[4rem] text-white z-10'>Aa</p>
         <Image
           src={fontImage}
