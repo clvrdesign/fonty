@@ -1,6 +1,6 @@
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/navbar/Navbar_main";
 import Footer from "./components/footer/Footer";
-import { Inter, Epilogue } from "next/font/google";
+import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 
 const interSans = Inter({
@@ -8,8 +8,8 @@ const interSans = Inter({
   subsets: ["latin"],
 });
 
-const epilogueSans = Epilogue({
-  variable: "--font-epilogue-sans",
+const soraSans = Sora({
+  variable: "--font-sora-sans",
   subsets: ["latin"],
 });
 
@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={`${interSans.variable} ${epilogueSans.variable}`}>
+      <body className={`${interSans.variable} ${soraSans.variable}`}>
         <Navbar/>
         {children}
         <Footer />

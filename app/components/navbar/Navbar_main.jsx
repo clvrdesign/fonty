@@ -3,9 +3,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import fonty from "@/public/logo-red.svg";
-import fonty_small from "@/public/logo_red_small.svg";
-import Button_secondary from "../Buttons/Button_secondary";
+import fonty from "@/public/logo-white.svg";
+import fonty_small from "@/public/logo_white_small.svg";
+import Button from "../Buttons/Button_main";
 import Container from "../Container";
 import { Search, Menu } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -33,11 +33,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className='flex justify-between items-center px-4 backdrop-blur-lg bg-white bg-opacity-90 z-50'>
+    <nav className='flex justify-between items-center px-4 bg-primary z-50'>
       <Container>
         <div className='flex justify-between items-center w-full'>
           <div className='md:w-fit w-full md:justify-start justify-between items-center flex gap-4 py-4 z-20'>
-            <Link href={"/"}>
+          <Link href={"/"}>
               <Image
                 src={logo}
                 alt='Logo'
@@ -63,18 +63,18 @@ const Navbar = () => {
               </form>
               <div
                 id='toggleMenu'
-                className='md:hidden block text-gray-500 text-lg cursor-pointer'
+                className='md:hidden block text-white text-lg cursor-pointer'
               >
                 <Menu strokeWidth={1.5} />
               </div>
             </div>
           </div>
           <div className='hidden md:flex items-center'>
-            <ul className='w-fit md:flex text-gray-500 text-base py-[28px]'>
+            <ul className='w-fit md:flex text-white text-base py-[28px]'>
               <li>
                 <a
                   href='/'
-                  className='py-[26px] border-b-4 border-primary lg:px-6 px-3 bg-primary/5 text-primary'
+                  className='py-[26px] border-b-4 border-white lg:px-6 px-3 bg-white/5 text-white'
                 >
                   Home
                 </a>
@@ -82,15 +82,15 @@ const Navbar = () => {
               <li>
                 <a
                   href='/fonts'
-                  className='py-[25px] lg:px-6 px-3 hover:text-primary'
+                  className='py-[25px] lg:px-6 px-3 hover:text-white/75'
                 >
-                  Browser Fonts
+                  Fonts
                 </a>
               </li>
               <li>
                 <a
                   href='/fonts/themes'
-                  className='py-[25px] lg:px-6 px-3 hover:text-primary'
+                  className='py-[25px] lg:px-6 px-3 hover:text-white/75'
                 >
                   Themes
                 </a>
@@ -98,13 +98,13 @@ const Navbar = () => {
               <li>
                 <a
                   href='/authors'
-                  className='py-[25px] lg:px-6 px-3 hover:text-primary'
+                  className='py-[25px] lg:px-6 px-3 hover:text-white/75'
                 >
-                  For Designers
+                  Designers
                 </a>
               </li>
             </ul>
-            <Button_secondary>Sign Up</Button_secondary>
+            <Button>Sign Up</Button>
           </div>
         </div>
       </Container>
