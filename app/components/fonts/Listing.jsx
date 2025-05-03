@@ -9,8 +9,8 @@ const Listing = () => {
     <div className='px-3'>
         <Container>
             <Filters/>
-            <h1 className='text-3xl font-bold mt-10 mb-4'>
-                Fonts Listing
+            <h1 className='text-4xl font-bold my-10 text-center'>
+                Fonts listing
             </h1>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3'>
                 <FontCard/>

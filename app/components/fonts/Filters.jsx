@@ -45,11 +45,6 @@ const Filters = () => {
                             <option value='unknown'>Premium</option>
                         </select>
                     </div>
-
-                    <div className='w-full flex flex-col gap-1'>
-                        <label className='sm:block hidden text-sm text-gray-700 opacity-0'>Apply Filter</label>
-                        <Button_primary>Apply</Button_primary>
-                    </div>
                 </div>
             </div>
         </section>

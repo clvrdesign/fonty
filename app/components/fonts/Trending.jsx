@@ -5,12 +5,20 @@ import Button_primary from '../Buttons/Button_primary'
 
 const Trending = () => {
   return (
-    <div className='mt-10 px-3'>
+    <div className='mt-10 px-3 pt-10'>
         <Container>
-            <h1 className='text-3xl font-bold mb-4'>
+            <h1 className='text-4xl font-bold my-10 text-center'>
                 Trending Fonts
             </h1>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3'>
+                <FontCard/>
+                <FontCard/>
+                <FontCard/>
+                <FontCard/>
+                <FontCard/>
+                <FontCard/>
+                <FontCard/>
+                <FontCard/>
                 <FontCard/>
                 <FontCard/>
                 <FontCard/>

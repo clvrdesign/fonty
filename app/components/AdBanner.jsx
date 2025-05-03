@@ -10,7 +10,7 @@ const AdBanner = () => {
           <p className='text-gray-700 text-center'>
             This is an ad banner. You can place your ad content here.
           </p>
-          <label className='absolute top-6 -right-10 bg-gradient-to-l from-primary-dark to-primary text-white w-[150px] rotate-[45deg] text-sm py-1 text-center'>
+          <label className='absolute top-6 -right-10 bg-primary text-white w-[150px] rotate-[45deg] text-sm py-1 text-center'>
             Sponsored
           </label>
         </div>

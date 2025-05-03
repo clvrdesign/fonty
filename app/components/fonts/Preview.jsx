@@ -1,36 +1,39 @@
-
 import React from "react";
 import Container from "../Container";
 import Button_primary from "../Buttons/Button_primary";
 import Button_success from "../Buttons/Button_success";
-
+import { DownloadCloud, ShoppingCart } from "lucide-react";
 
 const Preview = () => {
   return (
     <div className='px-3'>
       <Container>
-        <div className='flex justify-center items-center text-center bg-primary text-white h-[345px] rounded-3xl mt-4'>
-          <h1 className='text-4xl font-bold'>Montserrat</h1>
-        </div>
+        <h1 className='text-4xl font-bold my-10'>Font Preview</h1>
         <div className='w-full'>
           <div className='md:flex gap-8 mt-10'>
             <div className='md:w-2/3'>
               <div className='bg-white rounded-3xl p-4'>
                 <textarea
-                  className='w-full min-h-80 outline-none resize-none mb-4 p-4 text-3xl'
+                  className='w-full min-h-[450px] outline-none resize-none mb-4 p-4 text-3xl'
                   placeholder='Type here to preview'
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero facilis harum consequuntur dolorem veritatis labore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero facilis harum consequuntur dolorem veritatis labore.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero facilis harum consequuntur dolorem veritatis labore.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero facilis harum consequuntur dolorem veritatis labore.
                 </textarea>
-                <select
-                  id='font-size'
-                  className='px-3 py-2 text-sm font-light text-gray-700 border border-gray-200 bg-gray-100 rounded-lg outline-none focus:border-gray-300 transition duration-300'
-                >
-                  <option value='small'>Tinny</option>
-                  <option value='medium'>Small</option>
-                  <option value='large'>Medium</option>
-                  <option value='large'>Large</option>
-                </select>
+                <div className="max-w-32 flex flex-col">
+                  <label htmlFor='font-size' className="text-sm mb-2">Font size</label>
+                  <select
+                    id='font-size'
+                    className='px-3 py-2 text-sm font-light text-gray-700 border border-gray-200 bg-gray-100 rounded-lg outline-none focus:border-gray-300 transition duration-300'
+                  >
+                    <option value='small'>Tinny</option>
+                    <option value='medium'>Small</option>
+                    <option value='large'>Medium</option>
+                    <option value='large'>Large</option>
+                  </select>
+                </div>
               </div>
             </div>
 
@@ -62,9 +65,7 @@ const Preview = () => {
                           <h4 className='font-medium'>Personal Use</h4>
                           <p className='text-sm text-gray-600'>Free forever</p>
                         </div>
-                        <Button_success>
-                          Download
-                        </Button_success>
+                        <Button_success><DownloadCloud strokeWidth={1.5} /> Download</Button_success>
                       </div>
                       <div className='flex justify-between items-center p-4 border border-primary/20 rounded-2xl bg-primary/10'>
                         <div>
@@ -73,9 +74,7 @@ const Preview = () => {
                             $29.99 • One-time payment
                           </p>
                         </div>
-                        <Button_primary>
-                          Purchase
-                        </Button_primary>
+                        <Button_primary><ShoppingCart strokeWidth={1.5} /> Purchase</Button_primary>
                       </div>
                     </div>
                   </div>
