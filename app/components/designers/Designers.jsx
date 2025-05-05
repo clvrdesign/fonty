@@ -50,175 +50,150 @@ const Themes = () => {
         <h1 className='text-4xl font-bold my-10 text-center'>Designers</h1>
         <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3'>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
           <Link href={"/"}>
-            <div className='bg-white py-2 px-4 rounded-xl'>Fancy</div>
+            <div className='hover:bg-primary hover:text-white duration-300 bg-white py-2 px-4 rounded-xl'>Burundi</div>
           </Link>
         </div>
         <Link href={"/"}>
           <div className='bg-primary text-white rounded-xl py-2 px-4 mt-4'>
-            Fancy
+            Burundi
           </div>
           <div className='grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-10 mt-4'>
-            <ul>
-              <li>Comic</li>
-              <li>cartoon</li>
-              <li>Groovy</li>
-              <li>Old school</li>
-              <li>Curly</li>
-              <li>Western</li>
-              <li>Eroded</li>
-              <li>Destroy</li>
-              <li>Horror</li>
-              <li>Ice</li>
-              <li>Fire</li>
+            <ul className="flex flex-col gap-2">
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Comic</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>cartoon</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Groovy</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Old school</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Curly</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Western</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Eroded</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Destroy</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Horror</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Ice</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Fire</li></Link>
             </ul>
-            <ul>
-              <li>Comic</li>
-              <li>cartoon</li>
-              <li>Groovy</li>
-              <li>Old school</li>
-              <li>Curly</li>
-              <li>Western</li>
-              <li>Eroded</li>
-              <li>Destroy</li>
-              <li>Horror</li>
-              <li>Ice</li>
-              <li>Fire</li>
+            <ul className="flex flex-col gap-2">
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Comic</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>cartoon</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Groovy</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Old school</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Curly</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Western</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Eroded</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Destroy</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Horror</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Ice</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Fire</li></Link>
             </ul>
-            <ul>
-              <li>Comic</li>
-              <li>cartoon</li>
-              <li>Groovy</li>
-              <li>Old school</li>
-              <li>Curly</li>
-              <li>Western</li>
-              <li>Eroded</li>
-              <li>Destroy</li>
-              <li>Horror</li>
-              <li>Ice</li>
-              <li>Fire</li>
+            <ul className="flex flex-col gap-2">
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Comic</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>cartoon</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Groovy</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Old school</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Curly</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Western</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Eroded</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Destroy</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Horror</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Ice</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Fire</li></Link>
             </ul>
-            <ul>
-              <li>Comic</li>
-              <li>cartoon</li>
-              <li>Groovy</li>
-              <li>Old school</li>
-              <li>Curly</li>
-              <li>Western</li>
-              <li>Eroded</li>
-              <li>Destroy</li>
-              <li>Horror</li>
-              <li>Ice</li>
-              <li>Fire</li>
+            <ul className="flex flex-col gap-2">
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Comic</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>cartoon</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Groovy</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Old school</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Curly</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Western</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Eroded</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Destroy</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Horror</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Ice</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Fire</li></Link>
             </ul>
-            <ul>
-              <li>Comic</li>
-              <li>cartoon</li>
-              <li>Groovy</li>
-              <li>Old school</li>
-              <li>Curly</li>
-              <li>Western</li>
-              <li>Eroded</li>
-              <li>Destroy</li>
-              <li>Horror</li>
-              <li>Ice</li>
-              <li>Fire</li>
+            <ul className="flex flex-col gap-2">
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Comic</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>cartoon</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Groovy</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Old school</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Curly</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Western</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Eroded</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Destroy</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Horror</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Ice</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Fire</li></Link>
             </ul>
-            <ul>
-              <li>Comic</li>
-              <li>cartoon</li>
-              <li>Groovy</li>
-              <li>Old school</li>
-              <li>Curly</li>
-              <li>Western</li>
-              <li>Eroded</li>
-              <li>Destroy</li>
-              <li>Horror</li>
-              <li>Ice</li>
-              <li>Fire</li>
+            <ul className="flex flex-col gap-2">
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Comic</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>cartoon</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Groovy</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Old school</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Curly</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Western</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Eroded</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Destroy</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Horror</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Ice</li></Link>
+              <Link className="hover:text-primary duration-300" href={'/'}><li>Fire</li></Link>
             </ul>
-            <ul>
-              <li>Comic</li>
-              <li>cartoon</li>
-              <li>Groovy</li>
-              <li>Old school</li>
-              <li>Curly</li>
-              <li>Western</li>
-              <li>Eroded</li>
-              <li>Destroy</li>
-              <li>Horror</li>
-              <li>Ice</li>
-              <li>Fire</li>
-            </ul>
-            <ul>
-              <li>Comic</li>
-              <li>cartoon</li>
-              <li>Groovy</li>
-              <li>Old school</li>
-              <li>Curly</li>
-              <li>Western</li>
-              <li>Eroded</li>
-              <li>Destroy</li>
-              <li>Horror</li>
-              <li>Ice</li>
-              <li>Fire</li>
-            </ul>
+            
           </div>
         </Link>
       </Container>

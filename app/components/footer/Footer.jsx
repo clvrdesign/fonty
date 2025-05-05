@@ -92,7 +92,7 @@ const Footer = () => {
           </small>
           
           <div className="flex gap-4 text-xs">
-            <Link href="#" className='text-gray-400 hover:text-primary transition-colors duration-300'>
+            <Link href="/agreement" className='text-gray-400 hover:text-primary transition-colors duration-300'>
               Font Upload Agreement
             </Link>
             <span className="text-gray-600">|</span>

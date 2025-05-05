@@ -5,8 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import fonty from "@/public/logo-white.svg";
 import fonty_small from "@/public/logo_white_small.svg";
-import Button from "../Buttons/Button_main";
-import Container from "../Container";
+import Button from "../../components/Buttons/Button_main";
+import Container from "../../components/Container";
 import { Search, Menu, Github } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -108,7 +108,9 @@ const Navbar = () => {
               <div className='bg-white w-fit flex items-center gap-1 py-3 px-3 cursor-pointer rounded-full text-sm duration-300 hover:bg-gray-700 hover:text-white text-primary'>
                 <Github />
               </div>
-              <Button>Sign Up</Button>
+              <Link href={'/sign-up'}>
+                <Button>Sign Up</Button>
+              </Link>
             </div>
           </div>
         </div>
