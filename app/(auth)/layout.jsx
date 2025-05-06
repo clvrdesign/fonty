@@ -1,8 +1,7 @@
 import { Inter, Sora } from "next/font/google";
 import "../globals.css";
-import Image from "next/image";
-import logo from "@/public/logo-white.svg";
-import Link from "next/link";
+import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
 
 const interSans = Inter({
   variable: "--font-inter-sans",
@@ -23,20 +22,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={`${interSans.variable} ${soraSans.variable}`}>
-        <div className="flex">
-          <div className="w-2/6">
-          {children}
-          </div>
-          <div className='relative w-4/6 h-screen bg-primary'>
-            <Link href={'/'} className="absolute top-10 left-10">
-              <Image
-                height={50}
-                src={logo}
-                alt="logo"
-              />
-            </Link>
-          </div>
-        </div>
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   );

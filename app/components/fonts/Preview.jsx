@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../Container";
-import Button_primary from "../Buttons/Button_primary";
-import Button_success from "../Buttons/Button_success";
+import Button_primary from "../buttons/Button_primary";
+import Button_success from "../buttons/Button_success";
 import { DownloadCloud, ShoppingCart } from "lucide-react";
 
 const Preview = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { ListFilter } from "lucide-react";
-import Button_primary from "../Buttons/Button_primary";
+import Button_primary from "../buttons/Button_primary";
 
 const Filters = () => {
     return (

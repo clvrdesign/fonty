@@ -2,7 +2,7 @@ import React from "react";
 import { Heart, Library, DownloadCloud, Download } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import Button from "../Buttons/Button_secondary";
+import Button from "../buttons/Button_secondary";
 import fontImage from "@/public/font-bg.jpg";
 
 const FontCard = () => {

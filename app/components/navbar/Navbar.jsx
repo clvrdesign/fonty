@@ -5,8 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import fonty from "@/public/logo-red.svg";
 import fonty_small from "@/public/logo_red_small.svg";
-import Button_secondary from "../../Buttons/Button_secondary";
-import Container from "../../Container";
+import Button_secondary from "../buttons/Button_secondary";
+import Container from "../Container";
 import { Search, Menu } from "lucide-react";
 import { useState, useEffect } from "react";
 

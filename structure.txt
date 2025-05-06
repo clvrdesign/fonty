@@ -1,0 +1,72 @@
+free-font-platform/
+├── public/                  # Static assets
+│   ├── fonts/               # Sample/preview font files
+│   ├── images/              # Platform images, logos
+│   └── favicon.ico
+│
+├── src/
+│   ├── app/                 # Main application routes (Next.js 13+ app router)
+│   │   ├── (main)/         # Main layout group
+│   │   │   ├── layout.tsx  # Shared layout
+│   │   │   ├── page.tsx    # Homepage
+│   │   │   ├── fonts/      # Font listing
+│   │   │   │   ├── page.tsx
+│   │   │   │   └── [slug]/ # Dynamic font detail pages
+│   │   │   │       ├── page.tsx
+│   │   │   │       └── download/
+│   │   │   │           └── page.tsx
+│   │   │   ├── categories/ # Font categories
+│   │   │   │   ├── page.tsx
+│   │   │   │   └── [category]/
+│   │   │   │       └── page.tsx
+│   │   │   ├── search/     # Search results
+│   │   │   │   └── page.tsx
+│   │   │   ├── about/      # About page
+│   │   │   │   └── page.tsx
+│   │   │   ├── license/    # License information
+│   │   │   │   └── page.tsx
+│   │   │   └── contact/    # Contact page
+│   │   │       └── page.tsx
+│   │   │
+│   │   ├── (auth)/        # Auth layout group
+│   │   │   ├── layout.tsx
+│   │   │   ├── login/     # Login page
+│   │   │   │   └── page.tsx
+│   │   │   ├── register/  # Registration page
+│   │   │   │   └── page.tsx
+│   │   │   └── account/   # User account
+│   │   │       └── page.tsx
+│   │   │
+│   │   └── (admin)/       # Admin layout group
+│   │       ├── layout.tsx
+│   │       ├── dashboard/ # Admin dashboard
+│   │       │   └── page.tsx
+│   │       ├── upload/    # Font upload
+│   │       │   └── page.tsx
+│   │       └── manage/    # Font management
+│   │           └── page.tsx
+│   │
+│   ├── components/         # Reusable UI components
+│   │   ├── ui/             # Shadcn/ui components
+│   │   ├── fonts/          # Font-specific components
+│   │   ├── layout/         # Layout components
+│   │   └── shared/         # Shared components
+│   │
+│   ├── lib/                # Utility functions
+│   │   ├── api/            # API calls
+│   │   ├── constants/      # Constants
+│   │   └── utils/          # Helper functions
+│   │
+│   ├── styles/             # Global styles
+│   │   ├── globals.css
+│   │   └── theme/          # Theme variables
+│   │
+│   ├── types/              # TypeScript types
+│   │
+│   └── config/             # Configuration files
+│       ├── site.ts         # Site metadata
+│       └── fonts.ts       # Font-related config
+│
+├── .env.local              # Environment variables
+├── next.config.js          # Next.js config
+└── package.json

@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../Container'
 import FontCard from './FontCard'
-import Button_primary from '../Buttons/Button_primary'
+import Button_primary from '../buttons/Button_primary'
 import Filters from './Filters'
 
 const Listing = () => {
