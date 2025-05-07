@@ -1,104 +1,72 @@
 import Container from "@/app/components/Container";
-import { Heart, UserRound, CloudUpload, Bolt } from "lucide-react";
+import Aside from "@/app/components/account/Aside";
+import Image from "next/image";
+import userProfile from "@/public/user-a-solid.svg"
 
 const page = () => {
   return (
-    <section class='relative py-4 px-2'>
+    <section className='relative py-4 px-2'>
       <Container>
-        <div class='flex flex-col md:flex-row gap-4'>
-          <aside class='sm:sticky sm:top-16 fixed left-0 bottom-0 w-full md:w-64 flex-shrink-0 z-20'>
-            <div class='bg-white sm:rounded-2xl rounded-none md:shadow-lg md:shadow-gray-100 sm:px-5 md:py-8 sm:py-4 py-0'>
-              <h2 class='md:block hidden text-xl font-bold text-gray-700 mb-8'>
-                My Account
-              </h2>
-              <nav class='sm:space-y-3 md:block flex justify-between items-center text-gray-700 text-sm sm:py-0 py-2'>
-                <a
-                  href='/user'
-                  class='flex gap-2 items-center sm:flex-row flex-col px-4 py-2 rounded-lg text-primary duration-300 sm:hover:bg-gray-100'
-                >
-                  <UserRound />
-                  <small class='sm:text-sm text-xs'>Profile</small>
-                </a>
-                <a
-                  href='/user/favorites'
-                  class='flex gap-2 items-center sm:flex-row flex-col px-4 py-2 rounded-lg text-gray-600 duration-300 sm:hover:bg-gray-100'
-                >
-                  <Heart />
-                  <small class='sm:text-sm text-xs'>Favorites</small>
-                </a>
-                <a
-                  href='/user/uploads'
-                  class='flex gap-2 items-center sm:flex-row flex-col px-4 py-2 rounded-lg text-gray-600 duration-300 sm:hover:bg-gray-100'
-                >
-                  <CloudUpload />
-                  <small class='sm:text-sm text-xs'>Uploads</small>
-                </a>
-                <a
-                  href='/user/settings'
-                  class='flex gap-2 items-center sm:flex-row flex-col px-4 py-2 rounded-lg text-gray-600 duration-300 sm:hover:bg-gray-100'
-                >
-                  <Bolt />
-                  <small class='sm:text-sm text-xs'>Settings</small>
-                </a>
-              </nav>
-            </div>
-          </aside>
+        <div className='flex flex-col md:flex-row gap-4'>
+         <Aside/>
 
-          <div class='flex-1'>
-            <div class='bg-white rounded-2xl shadow-lg shadow-gray-100 overflow-hidden'>
-              <div class='bg-white sm:px-6 px-3 py-4 border-b border-gray-100'>
-                <h2 class='text-xl font-bold text-gray-700'>My Profile</h2>
-                <small class='text-gray-500'>
+          <div className='flex-1'>
+            <div className='bg-white rounded-2xl shadow-lg shadow-gray-100 overflow-hidden'>
+              <div className='bg-white sm:px-6 px-3 py-4 border-b border-gray-100'>
+                <h2 className='text-xl font-bold text-gray-700'>My Profile</h2>
+                <small className='text-gray-500'>
                   Manage your account information
                 </small>
               </div>
 
-              <div class='lg:px-32 px-3 sm:py-6 py-3'>
+              <div className='lg:px-32 px-3 sm:py-6 py-3'>
                 <form>
-                  <div class='mb-8'>
-                    <div class='w-full flex justify-center gap-3 my-10'>
-                      <div class='flex flex-col justify-center items-center gap-3'>
-                        <div class='relative w-36 h-36 rounded-full overflow-hidden group'>
+                  <div className='mb-8'>
+                    <div className='w-full flex justify-center gap-3 my-10'>
+                      <div className='flex flex-col justify-center items-center gap-3'>
+                        <div className='relative w-36 h-36 rounded-full overflow-hidden group'>
                           <label
-                            for='profile'
-                            class='absolute top-0 left-0 w-full h-full flex justify-center opacity-0 group-hover:opacity-100 duration-300 items-center bg-primary/75 text-white text-center text-sm py-2 cursor-pointer z-20'
+                            htmlFor='profile'
+                            className='absolute top-0 left-0 w-full h-full flex justify-center opacity-0 group-hover:opacity-100 duration-300 items-center bg-primary/75 text-white text-center text-sm py-2 cursor-pointer z-20'
                           >
-                            <i class='bi bi-image text-xl'></i>
+                            <i className='bi bi-image text-xl'></i>
                           </label>
                           <input
                             type='file'
                             name='profile'
                             id='profile'
-                            class='hidden opacity-0'
+                            className='hidden opacity-0'
                           />
-                          <img
+                          <Image
                             id='profilePreview'
-                            class='w-full h-full object-cover z-10'
-                            src='../assets/images/static/user_profile.png'
-                            alt=''
+                            className='w-full h-full object-cover z-10'
+                            width={144}
+                            height={144}
+                            src={userProfile}
+                            alt='user image'
                           />
                         </div>
-                        <div class='my-4 text-center'>
-                          <h1 class='text-gray-700 text-3xl font-semibold'>
+                        <div className='my-4 text-center'>
+                          <h1 className='text-gray-700 text-3xl font-semibold'>
                             Rosita Rositae
                           </h1>
-                          <p class='text-sm text-gray-500 text-center'>
-                            <i class='fi fi-rr-envelope inline-block translate-y-0.5'></i>
+                          <p className='text-sm text-gray-500 text-center'>
+                            <i className='fi fi-rr-envelope inline-block translate-y-0.5'></i>
                             rositae@gmail.com
                           </p>
                         </div>
                       </div>
                     </div>
 
-                    <div class='mb-8'>
-                      <h3 class='text-lg font-semibold text-gray-700 mb-4'>
+                    <div className='mb-8'>
+                      <h3 className='text-lg font-semibold text-gray-700 mb-4'>
                         Personal Information
                       </h3>
-                      <div class='grid grid-cols-1 md:grid-cols-2 sm:gap-6 gap-4'>
+                      <div className='grid grid-cols-1 md:grid-cols-2 sm:gap-6 gap-4 mb-6'>
                         <div>
                           <label
-                            for='username'
-                            class='block text-sm text-gray-500 mb-1'
+                            htmlFor='username'
+                            className='block text-sm text-gray-500 mb-1'
                           >
                             Username
                           </label>
@@ -106,13 +74,13 @@ const page = () => {
                             type='text'
                             id='username'
                             value='rosita'
-                            class='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'
+                            className='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'
                           />
                         </div>
                         <div>
                           <label
-                            for='email'
-                            class='block text-sm text-gray-500 mb-1'
+                            htmlFor='email'
+                            className='block text-sm text-gray-500 mb-1'
                           >
                             Email
                           </label>
@@ -120,15 +88,15 @@ const page = () => {
                             type='email'
                             id='email'
                             value='rositae@gmail.com'
-                            class='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'
+                            className='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'
                           />
                         </div>
                       </div>
-                      <div class='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                      <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                         <div>
                           <label
-                            for='firstName'
-                            class='block text-sm text-gray-500 mb-1'
+                            htmlFor='firstName'
+                            className='block text-sm text-gray-500 mb-1'
                           >
                             First name
                           </label>
@@ -136,13 +104,13 @@ const page = () => {
                             type='text'
                             id='firstName'
                             value='Rosita'
-                            class='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'
+                            className='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'
                           />
                         </div>
                         <div>
                           <label
-                            for='lastName'
-                            class='block text-sm text-gray-500 mb-1'
+                            htmlFor='lastName'
+                            className='block text-sm text-gray-500 mb-1'
                           >
                             Last name
                           </label>
@@ -150,19 +118,19 @@ const page = () => {
                             type='text'
                             id='lastName'
                             value='Rositae'
-                            class='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'
+                            className='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'
                           />
                         </div>
                         <div>
                           <label
-                            for='country'
-                            class='block text-sm text-gray-500 mb-1'
+                            htmlFor='country'
+                            className='block text-sm text-gray-500 mb-1'
                           >
                             Country
                           </label>
                           <select
                             id='country'
-                            class='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'
+                            className='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'
                           >
                             <option value='Burundi' selected>
                               Burundi
@@ -174,28 +142,28 @@ const page = () => {
                           </select>
                         </div>
                         <div>
-                          <label class='block text-sm text-gray-500 mb-1'>
+                          <label className='block text-sm text-gray-500 mb-1'>
                             Date of Birth
                           </label>
-                          <div class='grid grid-cols-3 gap-3'>
-                            <select class='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'>
+                          <div className='grid grid-cols-3 gap-3'>
+                            <select className='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'>
                               <option>Month</option>
                               <option>January</option>
                               <option>February</option>
                             </select>
-                            <select class='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'>
+                            <select className='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'>
                               <option>Day</option>
                             </select>
-                            <select class='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'>
+                            <select className='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'>
                               <option>Year</option>
                             </select>
                           </div>
                         </div>
                       </div>
-                      <div class='mt-4 flex justify-end'>
+                      <div className='mt-4 flex justify-end'>
                         <button
                           type='button'
-                          class='sm:w-fit w-full bg-primary text-white py-2.5 px-6 rounded-lg hover:bg-primary/90 transition duration-200 text-sm'
+                          className='sm:w-fit w-full bg-primary text-white py-2.5 px-6 rounded-lg hover:bg-primary/90 transition duration-200 text-sm'
                         >
                           Save
                         </button>
@@ -203,54 +171,54 @@ const page = () => {
                     </div>
 
                     <div>
-                      <h3 class='text-lg font-semibold text-gray-700 mb-4'>
+                      <h3 className='text-lg font-semibold text-gray-700 mb-4'>
                         Password
                       </h3>
-                      <div class='space-y-4'>
+                      <div className='space-y-4'>
                         <div>
                           <label
-                            for='currentPassword'
-                            class='block text-sm text-gray-500 mb-1'
+                            htmlFor='currentPassword'
+                            className='block text-sm text-gray-500 mb-1'
                           >
                             Current Password
                           </label>
                           <input
                             type='password'
                             id='currentPassword'
-                            class='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'
+                            className='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'
                           />
                         </div>
                         <div>
                           <label
-                            for='newPassword'
-                            class='block text-sm text-gray-500 mb-1'
+                            htmlFor='newPassword'
+                            className='block text-sm text-gray-500 mb-1'
                           >
                             New Password
                           </label>
                           <input
                             type='password'
                             id='newPassword'
-                            class='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'
+                            className='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'
                           />
                         </div>
                         <div>
                           <label
-                            for='confirmPassword'
-                            class='block text-sm text-gray-500 mb-1'
+                            htmlFor='confirmPassword'
+                            className='block text-sm text-gray-500 mb-1'
                           >
                             Confirm New Password
                           </label>
                           <input
                             type='password'
                             id='confirmPassword'
-                            class='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'
+                            className='w-full text-sm text-gray-700 bg-gray-100 border border-gray-200 outline-none rounded-lg px-3 py-2 duration-300 focus:border-gray-300'
                           />
                         </div>
                       </div>
-                      <div class='mt-4 flex justify-end'>
+                      <div className='mt-4 flex justify-end'>
                         <button
                           type='button'
-                          class='sm:w-fit w-full bg-primary text-white py-2.5 px-6 rounded-lg hover:bg-primary/90 transition duration-200 text-sm'
+                          className='sm:w-fit w-full bg-primary text-white py-2.5 px-6 rounded-lg hover:bg-primary/90 transition duration-200 text-sm'
                         >
                           Change Password
                         </button>
