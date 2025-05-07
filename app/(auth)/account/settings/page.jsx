@@ -35,7 +35,6 @@ const page = () => {
                     </label>
                   </div>
                 </div>
-
                  
                 <div className="border border-red-200 rounded-2xl p-5 bg-red-50">
                   <h3 className="text-lg font-medium text-red-800 mb-2">Danger Zone</h3>
