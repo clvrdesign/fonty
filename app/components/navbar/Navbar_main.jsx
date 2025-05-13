@@ -1,36 +1,12 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import fonty from "@/public/logo-white.svg";
-import fonty_small from "@/public/logo_white_small.svg";
 import Button from "../buttons/Button_main";
 import Container from "../../components/Container";
 import { Search, Menu, Github } from "lucide-react";
-import { useState, useEffect } from "react";
 
 const Navbar = () => {
-  const [logo, setLogo] = useState(fonty);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 926) {
-        setLogo(fonty_small);
-      } else {
-        setLogo(fonty);
-      }
-    };
-
-    // Initial check
-    handleResize();
-
-    // Listen for resize events
-    window.addEventListener("resize", handleResize);
-
-    // Cleanup on unmount
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <nav className='flex justify-between items-center px-4 bg-primary z-50'>
@@ -39,7 +15,7 @@ const Navbar = () => {
           <div className='md:w-fit w-full md:justify-start justify-between items-center flex gap-4 py-4 z-20'>
             <Link href={"/"}>
               <Image
-                src={logo}
+                src={fonty}
                 alt='Logo'
                 height={45} // Adjust the height as needed
                 priority={true} // Optional: Load the logo image with priority

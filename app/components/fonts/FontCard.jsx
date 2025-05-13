@@ -3,24 +3,24 @@ import { Heart, Library, DownloadCloud, Download } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import Button from "../buttons/Button_secondary";
-import fontImage from "@/public/font-bg.jpg";
+import fontImage from "@/public/better_saturday.png";
 
 const FontCard = () => {
   return (
     <div className='relative bg-white rounded-2xl overflow-hidden border group'>
-      <div className='absolute top-3 left-3 bg-white/10 text-white px-4 rounded-full flex gap-2 z-10'>
+      <div className='absolute top-3 left-3 bg-primary/10 text-primary px-4 rounded-full flex gap-2 z-10'>
         <small><Link className="hover:text-primary duration-300" href={'/'}>Script</Link> &gt; <Link className="hover:text-primary duration-300" href={'/'}>Various</Link></small>
       </div>
       <div className='absolute top-3 right-3 flex flex-col gap-2 z-10'>
-        <div className='h-8 w-8 flex justify-center items-center rounded-full opacity-0 group-hover:opacity-100 duration-300 cursor-pointer hover:bg-white hover:text-primary bg-white/10 text-white'>
+        <div className='h-8 w-8 flex justify-center items-center rounded-full opacity-0 group-hover:opacity-100 duration-300 cursor-pointer hover:bg-white hover:text-primary bg-primary/10 text-primary'>
           <Heart strokeWidth={1.5} size={18} />
         </div>
-        <div className=' h-8 w-8 flex justify-center items-center rounded-full opacity-0 group-hover:opacity-100 duration-300 cursor-pointer hover:bg-white hover:text-primary bg-white/10 text-white'>
+        <div className=' h-8 w-8 flex justify-center items-center rounded-full opacity-0 group-hover:opacity-100 duration-300 cursor-pointer hover:bg-white hover:text-primary bg-primary/10 text-primary'>
           <Library strokeWidth={1.5} size={18} />
         </div>
       </div>
-      <div className='p-4 h-60 bg-primary/0 flex items-center justify-center'>
-        <p className='text-[4rem] text-white z-10'>Aa</p>
+      <div className='relative p-4 h-60 bg-primary/0 flex items-center justify-center'>
+        <p className='hidden text-[4rem] text-white z-10'>Aa</p>
         <Image
           src={fontImage}
           width={2500}

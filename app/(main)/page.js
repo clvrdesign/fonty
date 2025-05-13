@@ -10,7 +10,6 @@ const page = () => {
       <Hero/>
       <Trending/>
       <AdBanner/>
-      <Newsletter/>
     </>
   )
 }

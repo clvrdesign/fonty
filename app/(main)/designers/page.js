@@ -1,7 +1,6 @@
 import React from "react";
 import Designers from "../../components/designers/Designers";
 import AdBanner from "../../components/AdBanner";
-import Newsletter from "../../components/Newsletter";
 
 const page = () => {
   return (
@@ -22,7 +21,6 @@ const page = () => {
       </section>
       <Designers />
       <AdBanner />
-      <Newsletter />
     </>
   );
 };

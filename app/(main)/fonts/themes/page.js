@@ -1,6 +1,5 @@
 import React from 'react'
-import AdBanner from '../../components/AdBanner'
-import Newsletter from '../../components/Newsletter'
+import AdBanner from '../../../components/AdBanner'
 import Themes from '@/app/components/themes/Themes'
 
 const page = () => {
@@ -8,7 +7,6 @@ const page = () => {
     <>
       <Themes/>
       <AdBanner/>
-      <Newsletter/>
     </>
   )
 }

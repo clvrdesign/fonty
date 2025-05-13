@@ -1,4 +1,4 @@
-import Navbar from "../components/navbar/Navbar_main";
+import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import { Inter, Sora } from "next/font/google";
 import "../globals.css";
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body className={`${interSans.variable} ${soraSans.variable}`}>
-        <Navbar/>
+        <Navbar />
         {children}
         <Footer />
       </body>
